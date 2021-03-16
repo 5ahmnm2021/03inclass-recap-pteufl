@@ -345,6 +345,8 @@ MonoBehaviour:
   weiss: {r: 1, g: 1, b: 1, a: 1}
   n1Float: 0
   n2Float: 0
+  num1: 0
+  num2: 0
 --- !u!1 &176690082
 GameObject:
   m_ObjectHideFlags: 0

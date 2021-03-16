@@ -10,11 +10,13 @@ public class Add : MonoBehaviour
     public Text message;
     public Text sumText;
 
-    public Color rot = Color.red;
-    public Color weiss = Color.white;
+    //public Color rot = Color.red;
+    //public Color weiss = Color.white;
 
     public float n1Float;
     public float n2Float;
+    public bool num1 = true;
+    public bool num2 = true;
 
     // Start is called before the first frame update
     void Start()
@@ -30,31 +32,42 @@ public class Add : MonoBehaviour
 
     public void AddInputFields()
     {
+        string errorMsg = "Geben Sie eine gültige Zahl ein";
+
         try
         {
             n1Float = float.Parse(inputField1.text);
-            inputField1.image.color = weiss;
+            num1 = true;
+            inputField1.image.color = Color.white;
             message.text = "";
         }
         catch (System.Exception)
         {
-            message.text = "Geben Sie eine gültige Zahl ein";
-            inputField1.image.color = rot;
+            message.text = errorMsg;
+            inputField1.image.color = Color.red;
+            num1 = false;
         }
 
         try
         {
             n2Float = float.Parse(inputField2.text);
-            inputField2.image.color = weiss;
+            inputField2.image.color = Color.white;
+            num2 = true;
         }
 
         catch (System.Exception)
         {
-            message.text = "Geben Sie eine gültige Zahl ein";
-            inputField2.image.color = rot;
+            message.text = errorMsg;
+            inputField2.image.color = Color.red;
+            num2 = false;
         }
 
-        sumText.text = (n1Float + n2Float).ToString();
-        Debug.Log("Die Addition ergibt: " + sumText.text);
+        Debug.Log("a" + n1Float + "b" + n2Float);
+
+        if (num1 == true && num2 == true)
+        {
+            sumText.text = (n1Float + n2Float).ToString();
+            Debug.Log("Die Addition ergibt: " + sumText.text);
+        }
     }
 }
