@@ -20,7 +20,7 @@ Install Unity, open in Unity Hub.
 /
 
 ### Project state: 
-70%
+100%
 
 ### Limitations: 
 
