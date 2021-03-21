@@ -10,21 +10,14 @@ public class Add : MonoBehaviour
     public Text message;
     public Text sumText;
 
-    //public Color rot = Color.red;
-    //public Color weiss = Color.white;
-
-    public float n1Float;
-    public float n2Float;
     public bool num1 = true;
     public bool num2 = true;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -32,6 +25,9 @@ public class Add : MonoBehaviour
 
     public void AddInputFields()
     {
+        float n1Float = 0;
+        float n2Float = 0;
+
         string errorMsg = "Geben Sie eine gültige Zahl ein";
 
         try
@@ -62,12 +58,9 @@ public class Add : MonoBehaviour
             num2 = false;
         }
 
-        Debug.Log("a" + n1Float + "b" + n2Float);
-
         if (num1 == true && num2 == true)
         {
             sumText.text = (n1Float + n2Float).ToString();
-            Debug.Log("Die Addition ergibt: " + sumText.text);
         }
     }
 }

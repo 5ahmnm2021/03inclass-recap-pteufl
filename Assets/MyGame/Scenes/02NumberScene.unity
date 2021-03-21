@@ -341,10 +341,6 @@ MonoBehaviour:
   inputField2: {fileID: 1271880546}
   message: {fileID: 1010617945}
   sumText: {fileID: 666794231}
-  rot: {r: 1, g: 0, b: 0, a: 1}
-  weiss: {r: 1, g: 1, b: 1, a: 1}
-  n1Float: 0
-  n2Float: 0
   num1: 0
   num2: 0
 --- !u!1 &176690082
@@ -939,7 +935,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Add Numbers
+  m_Text: 
 --- !u!1 &1232439843
 GameObject:
   m_ObjectHideFlags: 0

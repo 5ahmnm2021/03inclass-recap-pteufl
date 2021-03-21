@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 53272382}
   - component: {fileID: 53272381}
+  - component: {fileID: 53272383}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -166,6 +167,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &53272383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53272380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d31573d59f84d00bea2bad5c84433e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageColor: {fileID: 837957756}
 --- !u!1 &105319426
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.8039216, b: 0.09803922, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
